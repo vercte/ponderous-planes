@@ -1,0 +1,6 @@
+{
+  "generator.ponderous_planes.ponderous_planes": "Ponderflat",
+  "ponderous_planes.selectWorld.gameRules": "Developer Game Rules",
+  "ponderous_planes.selectWorld.gameRules.tooltip.disabled": "enable Developer Game Rules (no weather, no daylight cycle, no mob spawning)",
+  "ponderous_planes.selectWorld.gameRules.tooltip.enabled": "disable Developer Game Rules (no weather, no daylight cycle, no mob spawning)"
+}
