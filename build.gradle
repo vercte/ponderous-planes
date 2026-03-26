@@ -93,7 +93,7 @@ publishing {
     repositories {
         maven {
             name = "vercte-maven"
-            url = uri("https://vercte.oreostack.uk/${findProperty("publishTo") ?: "releases"}")
+            url = uri("https://maven.vercte.net/${findProperty("publishTo") ?: "releases"}")
             credentials {
                 username = findProperty("mavenUsername")
                 password = findProperty("mavenPassword")
