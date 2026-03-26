@@ -13,7 +13,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = "${mod_id}-mc${minecraft_version}"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -86,12 +86,18 @@ neoForge.ideSyncTask generateModMetadata
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
+            artifactId base.archivesName.get()
             from components.java
         }
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/repo"
+            name = "vercte-maven"
+            url = uri("https://vercte.oreostack.uk/${findProperty("publishTo") ?: "releases"}")
+            credentials {
+                username = findProperty("mavenUsername")
+                password = findProperty("mavenPassword")
+            }
         }
     }
 }
