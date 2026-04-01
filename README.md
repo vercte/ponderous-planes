@@ -14,6 +14,6 @@ repositories {
 }
 
 dependencies {
-    runtimeOnly "net.vercte.ponderous_planes:ponderous_planes-mc${minecraft-version}:${ponderous_planes_version}"
+    runtimeOnly "net.vercte.ponderous_planes:ponderous_planes-mc${minecraft_version}:${ponderous_planes_version}"
 }
 ```
